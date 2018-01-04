@@ -17,6 +17,11 @@ class Car
 	def gets_car_attributes
 		puts "Put the unique car_id of a car: "
 		@car_id = gets.chomp.to_i
+		if @car_id != [/\d+/]
+		puts "Please put in the valid serial number: "
+		@car_id = gets.chomp.to_i
+		end
+
 		puts "Please enter Make of a car: "
 		@make = gets.chomp
 		puts "Please enter Model of a car: "
@@ -26,6 +31,5 @@ class Car
 		puts "Please enter price tag of a car: "
 		@price = gets.chomp
 	end
-
 end
 

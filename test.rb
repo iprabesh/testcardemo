@@ -25,7 +25,7 @@ car_list.each do |car|
 		puts "#{removeCar_id} -- Not Found"
 		break
 	end
-	end
+end
 puts
 puts "New list of a car: \n"
 puts car_list

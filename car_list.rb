@@ -1,5 +1,7 @@
 require_relative 'car'
+require_relative 'question'
 
+=begin
 class CarList
 
 	attr_accessor :name
@@ -12,5 +14,28 @@ class CarList
 	def add_car_to_list(car)
 		@car_list_name >> car
 	end
+end
+=end
+
+module CarList
+
+	def self.initialize
+		@car_list = []
+	end
+
+	def self.add_car_to_list(car)
+		@car_list >> car
+	end
+
+	def random
+		@car_list.sample
+	end
+
+end
+
+
+if __FILE__ == $0
+
+	
 
 end

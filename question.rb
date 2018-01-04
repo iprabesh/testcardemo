@@ -34,14 +34,12 @@ module Questions
 						car = Car.new
 						car.gets_car_attributes
 						car_list.push(car)
-						puts car.model.upcase 
 						puts puts
 						car_num=car_num-1	
 					end
 					intro_question
 				when 3 
 					puts "Remove a car: \n"
-					puts "Which one would you like to remove: "
 					puts "Which one would you like to remove: "
 				removeCar_id = gets.chomp.to_i
 					car_list.each do |car| 	
